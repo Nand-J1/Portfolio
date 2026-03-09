@@ -1,0 +1,43 @@
+.content1 {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: #0a2a43;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+#s1{
+  font-weight:bold;
+  font-style:none;
+  font-family: 'Times New Roman', Times, serif;
+}
+.intro span {
+  color: #00bcd4; 
+  font-style: italic;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content2 img {
+  width: 280px;
+  height: auto;
+  border-radius: 50%; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  transition: transform 0.3s ease;
+}
+
+.content2 img:hover {
+  transform: scale(1.05); 
+}
+
