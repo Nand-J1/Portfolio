@@ -9,11 +9,13 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
-nav {
-  background-color: #0a2a43; 
-  padding: 1rem;
-}
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a2a43;
+    align-items: center;
+    padding: 15px 60px;
+    width: 100%;}
 nav ul {
   list-style: none;
   display: flex;
@@ -39,51 +41,51 @@ section {
   max-width: 1000px;
   margin: 0 auto;
 }
-
-footer {
-  background-color: #0a2a43;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
- 
-}
-#footer-ul li{
-    List-style:none;
-    display:flex;
-    justify-content:center;
-}
-footer a {
-  color: #00bcd4;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-footer a:hover {
-  color: #fff;
-}
 footer {
   background-color: #0a2a43; /* navy */
   color: #fff;
-  text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  border-top: 2px solid #00bcd4;
+}
+.footer-content {
   display: flex;
-  flex-direction: column; 
+  justify-content: space-between; /* left, center, right */
   align-items: center;
-  gap: 1rem;
-   margin-top: 2rem;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
-
-/* Social icons */
-footer .footer-social {
+.footer-contact p,.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.footer-nav ul {
+  list-style: none;
   display: flex;
   gap: 1rem;
 }
 
-footer .footer-social a {
+.footer-nav ul li a {
   color: #00bcd4; /* cyan accent */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-nav ul li a:hover {
+  color: #fff;
+}
+
+/* Social icons (right) */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: #00bcd4;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
-footer .footer-social a:hover {
+.footer-social a:hover {
   color: #fff;
 }
 button, .btn {
@@ -100,18 +102,7 @@ button:hover, .btn:hover {
   background-color: #008c9e;
 }
 
-@media(min-width:768px){
-  footer {
-    flex-direction: row; /* side by side */
-    justify-content: space-between;
-    padding: 1rem 2rem;
-  }
 
-  footer p {
-    margin: 0;
-  }
-
-}
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -121,4 +112,15 @@ button:hover, .btn:hover {
   section {
     padding: 32px 16px;
   }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
+
