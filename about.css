@@ -1,41 +1,31 @@
-#about {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-#about-container {
-    display: flex;
-    align-items: center; /* Aligns text and image vertically */
-    gap: 20px; /* Adds space between text and image */
-}
-.about-text {
+.aboutme{
   float:left;
   width:60%;
 }
 
-.about-text h1 {
+.aboutme h1 {
   font-size: 32px;
   color: #0a2a43;
   margin-bottom: 20px;
 }
 
-.about-text p {
+.aboutme p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 16px;
 }
 
-.about-text span {
+.aboutme span {
   color: #00bcd4;
   font-weight: bold;
 }
+span{
+  font-style: italic;
+  color:#00bcd4;
+}
 
-/* Image section */
-.abtimg img{
+figure img{
+    padding:2px;
     float:center;
     width: 280px;
     height: auto;
@@ -44,18 +34,30 @@
     transition: transform 0.3s ease;
 }
 
-.abtimg img:hover {
+figure img:hover {
   transform: scale(1.05);
 }
-
-/* Responsive: stack vertically on smaller screens */
+figure{
+  grid-area:image;
+  display:flex;
+  flex-direction:column;
+}
+#aboutme{
+  grid-area:text;}
+main{
+  display:grid;
+  grid-template-areas:"text image";
+  grid-template-columns: 1fr 1fr;
+  align-items:center;
+}
+/* Responsive so it stack vertically on smaller screens */
 @media (max-width: 768px) {
   #about {
     flex-direction: column;
     text-align: center;
   }
 
-  .abtimg img {
+  figure img {
     width: 180px;
     margin-top: 20px;
   }

@@ -1,14 +1,14 @@
-/* Projects section container */
+
 #projects {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #0a0a0a; /* dark background */
+  background-color: #0a0a0a;
   color: #fff;
 }
 
-/* Heading */
-#projects h1 {
+
+#project h1 {
   font-size: 36px;
   text-align: center;
   color: #00bcd4;
@@ -16,21 +16,20 @@
   margin-bottom: 40px;
 }
 
-/* Grid layout */
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-areas: "card1 card2 card3";
   gap: 24px;
 }
 
-/* Project card */
 .project-card {
   background-color: #111;
   border: 1px solid #00bcd4;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* ensures content flows vertically */
+  flex-direction: column; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -39,18 +38,19 @@
   box-shadow: 0 0 16px #00bcd4;
 }
 
-/* Fix image sizing */
 .project-card img {
-  width: 100%;
-  height: 200px;              /* fixed height */
-  object-fit: cover;          /* crop to fit neatly */
-  display: block;
+  width: 20%;
+  height: 200px;              
+  object-fit: cover;          
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Card content */
+
 .card-content {
   padding: 16px;
-  flex: 1; /* ensures text fills remaining space */
+  flex: 1; 
 }
 
 .card-content h2 {
