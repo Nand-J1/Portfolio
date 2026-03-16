@@ -11,25 +11,25 @@ body {
 }
 #nav-bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #0a2a43;
     align-items: center;
     padding: 15px 60px;
     width: 100%;}
-nav ul {
+#navlist{
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 32px;
 }
-nav ul li a {
+#navlist li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+#navlist li a:hover {
   color: #00bcd4; 
 }
 h1, h2 {
@@ -45,6 +45,8 @@ footer {
   background-color: #0a2a43; /* navy */
   color: #fff;
   padding: 16px 32px;
+  position:sticky;
+  top:100vh;
   border-top: 2px solid #00bcd4;
 }
 .footer-content {
