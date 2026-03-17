@@ -2,6 +2,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
     font-family:'Times New Roman', Times, serif;
@@ -22,6 +23,8 @@ html, body {
     align-items: center;
     padding: 15px 60px;
     width: 100%;
+    margin:0 0 0 0;
+    border-bottom: 2px solid #00bcd4;
 }
 #navlist{
   list-style: none;
@@ -45,11 +48,7 @@ h1, h2 {
   color: #0a2a43;
   margin-bottom: 16px;
 }
-section {
-  padding:54px 32px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+
 main{flex:1;}
 
 footer {
@@ -57,7 +56,7 @@ footer {
   color: #fff;
   padding: 20px 40px;
   width:100%;
-  margin:auto;
+  margin:0;
   border-top: 2px solid #00bcd4;
 }
 .footer-content {
@@ -101,6 +100,7 @@ footer {
 .footer-social a:hover {
   color: #fff;
 }
+
 button, .btn {
   background-color: #00bcd4;
   color: #fff;
