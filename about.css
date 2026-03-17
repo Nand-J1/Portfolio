@@ -41,17 +41,21 @@ figure{
   grid-area:image;
   display:flex;
   flex-direction:column;
+  align-items:center;
 }
 #aboutme{
   grid-area:text;}
-main{
+@media only screen and (min-width: 768px) {
+  main{
   display:grid;
   grid-template-areas:"text image";
   grid-template-columns: 1fr 1fr;
   align-items:center;
 }
+}
+
 /* Responsive so it stack vertically on smaller screens */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #about {
     flex-direction: column;
     text-align: center;
@@ -60,5 +64,6 @@ main{
   figure img {
     width: 180px;
     margin-top: 20px;
+    align-items:center;
   }
 }

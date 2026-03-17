@@ -59,10 +59,11 @@
   }
   .pic{
     grid-area:picture;
-    justify-content: left;
+    align-items:center;
   }
   #intro-text{
     grid-area:text1;
-    
+    align-items:flex-start;
+    padding:10px;
   }
 }
