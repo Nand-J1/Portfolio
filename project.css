@@ -10,13 +10,13 @@
   grid-area:h;
   font-size: 36px;
   text-align: center;
-  color: #00bcd4;
+  color: #00bcd3;
   text-shadow: 0 0 8px #00bcd4;
   margin-bottom: 40px;
 }
 #project h2{
-  color: #d7e7e9;
-  text-shadow: 0 0 6px #2000d4;
+  color: #00787a;
+  text-shadow: 0 0 2px #00787a;
 }
 .project-grid {
   display: grid;
@@ -27,9 +27,8 @@
 
 
 .project-card {
-  background-color: #00bcd4;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border: 1px solid #0043d4;
+  background-color: lightcyan;
+  border: 1px solid #00787a;
   border-radius: 8px;
   display: flex;
   flex-direction: column; 
@@ -38,16 +37,18 @@
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 16px #00bcd4;
+  box-shadow: 0 0 16px #01abae;
 }
 
 .project-card img {
-  width: 100%;
+  margin:2%;
+  width: 96%;
   height: 200px;              
   object-fit: cover;          
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius:10px;
 }
 
 
@@ -56,18 +57,18 @@
   flex: 1; 
 }
 
-.card-content h2 {
+.project-card h2 {
   font-size: 22px;
   color: #00bcd4;
   text-shadow: 0 0 6px #00bcd4;
   margin-bottom: 12px;
 }
 
-.card-content p {
+.project-card p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 12px;
-  color: #ddd;
+  color: #1811e1;
 }
 
 .card-content .label {

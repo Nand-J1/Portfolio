@@ -1,9 +1,9 @@
 .skills-grid {
-    display: grid;
-    grid-template-areas: "skill1 skill2 skill3 skill4";
-    gap: 20px;
-    padding: 20px;
-    }
+        display: grid;
+        grid-template-areas: "skill1" "skill2" "skill3" "skill4";
+        gap: 20px;
+        padding: 20px;
+}
 ul{
     list-style: none;
     padding-left: 20px;
@@ -24,3 +24,4 @@ ul{
     align-items: center;
     padding: 20px;
 }
+

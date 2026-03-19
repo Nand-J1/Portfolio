@@ -6,9 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <nav id="nav-bar">
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <ul id="navlist">
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -19,29 +25,29 @@
         </ul>
     </nav>
     <main>
-    <section id="contact">
-        <h1>Contact Me</h1>
-        <p>If you’d like to collaborate, discuss opportunities, or just say hello, feel free to reach out!</p>
         <div class="contact-info">
+            <h1>Contact Me</h1>
+            <p>If you’d like to collaborate, discuss opportunities, or just say hello, feel free to reach out!</p>
             <p>Email: <a href="mailto:nandana.sivaganga@gmail.com">nandana.sivaganga@gmail.com</a></p>
             <p>Phone: <a href="tel:+919014187841">+91 90141 87841</a></p>
             <p>Location: Amritapuri, India</p>
-        </div>
-        <form class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-        </form>
-
-        <div class="contact-social">
-                <a href="https://github.com/Nand-J1" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <div class="contact-social">
+                <a href="https://github.com/Nand-J1" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
                 <a href="https://www.linkedin.com/in/nandana-jayakumar-baba163a3/"><i class="fa-brands fa-linkedin"></i></a>
-        </div>  
-    </section>  
+            </div>  
+        </div>
+        <div class="forms-container">
+            <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
     </main>
     <footer>
         <div class="footer-content">

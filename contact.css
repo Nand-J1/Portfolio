@@ -1,0 +1,32 @@
+.forms-container{
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+    padding:20px;
+    background-color: rgb(94, 94, 193);
+}
+input,textarea {
+    width:100%;
+    margin-bottom:10px;
+}
+h1{
+    text-align:center;
+    color:pink;
+}
+.contact-social a{
+    color:black;
+}
+@media only screen and (min-width:678px){
+    main{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+        place-items:center;
+    }  
+    .contact-info{
+        grid-column:1;
+    }
+    .forms-container{
+        grid-column:2;
+    }
+}
