@@ -15,6 +15,9 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+html{
+  scroll-behavior:smooth;
+}
 #menu-toggle{
   display:none;
 }
@@ -47,7 +50,8 @@ html, body {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+
 }
 
 #navlist li a:hover {
@@ -75,7 +79,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-wrap: wrap;
+  flex-wrap: wrap;
 }
 .footer-contact p,.footer-contact a {
   color: #fff;
@@ -128,26 +132,19 @@ button:hover, .btn:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  /*attempting hamburger-menu*/
+  /*hamburger menu for mobile*/
   #nav-bar{
     flex-direction:column;
-    align-items:center;
+    align-items:flex-start;
     padding:15px 20px;
   }
-  #nav-list{
+  #navlist{
     flex-direction:column;
     align-items:center;
     width:100%;
     display:none;
     background-color:#0a2a43;
     margin-top:10px;
-  }
-  #navlist{
-    flex-direction:column;
-    width:100%;
-    background-color: #0a2a43;
-    margin-top:10px;
-    align-items:center;
   }
   #navlist li{
     padding:10px 0;
@@ -160,10 +157,7 @@ button:hover, .btn:hover {
   #menu-toggle:checked ~ #navlist{
     display:flex;
   }
-  section {
-    padding: 32px 16px;
-  }
- 
+
   .footer-content {
     flex-direction: column;
     text-align: center;

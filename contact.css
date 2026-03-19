@@ -16,7 +16,7 @@ h1{
 .contact-social a{
     color:black;
 }
-@media only screen and (min-width:678px){
+@media only screen and (min-width:768px){
     main{
         display:grid;
         grid-template-columns:1fr 1fr;
