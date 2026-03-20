@@ -1,13 +1,9 @@
 main{
-  background: linear-gradient(45deg, 
-    #0d905c,
-    #001572,  
-    #1e3c72,   
-    #020617 );
-    color:white;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  background: linear-gradient(45deg,#0d905c,#001572,#1e3c72,#020617 );
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content1 {

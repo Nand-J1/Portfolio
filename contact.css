@@ -1,40 +1,101 @@
 main{
+    background: linear-gradient(-45deg,#0d905c,#001572,#10175e,#020617 );
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:40px;
     padding: 60px 10%;
+    align-items:start;
 }
-.forms-container{
-    border:1px solid black;
+.forms-container,#contact-content{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
     padding:25px;
-    background:#e6faff;
     border-radius:10px;
+    backdrop-filter:blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
-
+label{
+    font-size:20px;
+    color:whitesmoke;
+}
+.contact-info{
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+}
 .contact-info h1{
-    margin-bottom:20px;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 16px;
+    text-align:center;
+    text-shadow: 2px 2px 4px rgba(0, 188, 212, 0.5);
 }
+.contact-info a{
+    color:rgb(225, 219, 219);
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+.contact-info a:hover{
+    color:#00bcd4;
+}
+.contact-social{
+    margin-top:20px;
+    display:flex;
+    gap:20px;
+}
+.contact-social a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding:6px 16px;
+    transition: all 0.3s ease;
+}
+.contact-social a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+i{font-size: 24px;}
 input,textarea {
     width:100%;
     margin-bottom:10px;
     padding:10px;
     border-radius: 10px;
-}
-h1{
-    text-align:center;
-    color:pink;
-}
-.contact-social a{
-    color:black;
+    border:1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
+    color:white;
+}input:focus,textarea:focus{/*focus:when user has activated the element*/
+    outline:none;/*removing default white outline when pressed*/
+    border-color:#00bcd4;
+    box-shadow:0 0 10px rgba(23, 137, 172, 0.678);
 }
 button{
     width: 100%;
+    border:none;
+    padding:12px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition:all 0.3s ease;
+}
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 10px rgba(23, 137, 172, 0.678);
 }
 @media only screen and (max-width:768px){
     main{
-        display:grid;
         grid-template-columns:1fr;
+        padding:40px 6%;
         gap:20px;
-        place-items:center;
-    }  
+    }
+    .contact-info{
+        text-align: center;
+    }
+    .forms-container{
+        width: 100%;
+        max-width:600px;
+        margin:auto;
+    }
 }
+

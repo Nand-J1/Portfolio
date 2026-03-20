@@ -1,7 +1,16 @@
+main{
+    background:linear-gradient(-135deg,#020617,#001572,rgb(8, 35, 152),#130546,rgb(27, 1, 25));
+}
+
 #education{
     position:relative;
     max-width:800px;
     margin:40px auto;
+}
+.edu-content h2{
+    color:#73d6e3
+}.edu-content p{
+    color:rgb(217, 222, 193);
 }
 #education::after{
     content:'';
@@ -14,7 +23,7 @@
     transform:translateX(-50%);
 }
 .edu-card{
-    padding:20px;
+    padding:30px 20px;
     width:50%;
     position:relative;
 
@@ -27,23 +36,52 @@
     left:50%;
 }
 .edu-content{
-    background:white;
+    background:rgba(255,255,255,0.05);
     padding:15px;
-    border-radius:8px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    border-radius:11px;
+    border: 1px solid rgba(255,255,255,0.1);
+    line-height: 1.4;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+.edu-content:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.8);
+}
+.edu-card::before{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #00bcd4;
+    border-radius:50%;
+    top:25px;
+    z-index:1;
+}
+.edu-card:nth-child(odd)::before {
+    right: -7px;
+}
+.edu-card:nth-child(even)::before {
+    left: -7px;
 }
 @media (max-width:768px){
-  #education::after{
+    #education{margin: 20px auto;
+    }
+    #education::after{
     left:20px;
-  }
+    }
 
-  .edu-card{
-    width:100%;
-    padding-left:50px;
-    text-align:left;
-  }
-  .edu-card:nth-child(even),
-  .edu-card:nth-child(odd){
-    left:0;
-  }
+    .edu-card{
+        width:100%;
+        padding-left:50px;
+        padding-right: 20px;
+        margin-bottom: 30px;
+        text-align:left;
+    }
+    .edu-card:nth-child(even),.edu-card:nth-child(odd){
+        left:0;
+    }
+    .edu-content{
+        line-height: 1.6;
+    }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONTACT ME</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="contact.css">
@@ -18,32 +18,35 @@
         </div>
         <input type="checkbox" id="menu-toggle">
         <ul id="navlist">
-            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="project.html">PROJECTS</a></li>
             <li><a href="skills.html">SKILLS</a></li>
             <li><a href="edu.html">EDUCATION</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="contact.html" class="active">CONTACT</a></li>
         </ul>
     </nav>
     <main>
         <div class="contact-info">
             <h1>Contact Me</h1>
-            <p>If you’d like to collaborate, discuss opportunities, or just say hello, feel free to reach out!</p>
-            <p><strong>Email: </strong><a href="mailto:nandana.sivaganga@gmail.com">nandana.sivaganga@gmail.com</a></p>
-            <p><strong>Phone: </strong><a href="tel:+919014187841">+91 90141 87841</a></p>
-            <p><strong>Location: </strong>Amritapuri, India</p>
+            <div id="contact-content">
+                <p>If you’d like to collaborate, discuss opportunities, or just say hello, feel free to reach out!</p>
+                <p><strong>Email: </strong><a href="mailto:nandana.sivaganga@gmail.com">nandana.sivaganga@gmail.com</a></p>
+                <p><strong>Phone: </strong><a href="tel:+919014187841">+91 90141 87841</a></p>
+                <p><strong>Location: </strong>Amritapuri, India</p>
+            </div>
             <div class="contact-social">
-                <a href="https://github.com/Nand-J1" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+                <a href="https://github.com/Nand-J1" target="_blank"><i class="fa-brands fa-github"></i></a><br>
                 <a href="https://www.linkedin.com/in/nandana-jayakumar-baba163a3/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:nandana.sivaganga@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
             </div>  
         </div>
         <div class="forms-container">
             <form class="contact-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" placeholder="Full Name" required><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="6" required></textarea><br>
             <button type="submit">Send Message</button>

@@ -1,14 +1,18 @@
 /*Common styling for navigation and footer*/
+
+/*importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+
 body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height:1.5;
-}
-   
+}  
 html, body {
   height: 100%;
   display: flex;
@@ -58,7 +62,6 @@ html{
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease;
   position:relative;
   padding:6px 10px;
   border-radius:10px;
@@ -90,15 +93,27 @@ html{
 #navlist li a:hover::after{
   width:100%;
 }
+h1,h2,h3{
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
 h1{
-  color: #0a2a43;
+  color: #e8eef2;
   margin-bottom: 16px;
+  font-size: 38px;
+  font-weight: 600;
   padding:10px;
   text-shadow:2px 2px 4px rgba(0, 188, 212, 0.5);
 }
-
+h2{
+  color:white;
+  font-size: 24px;
+  font-weight: 600;
+}
 main{flex:1;}
-
+p{
+  color:white;
+}
 footer {
   background-color: #0a2a43; 
   color: #fff;
@@ -163,7 +178,7 @@ button:hover, .btn:hover {
   background-color: #008c9e;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
   /*hamburger menu for mobile*/
   #nav-bar{
     flex-direction: column;
@@ -188,12 +203,6 @@ button:hover, .btn:hover {
     opacity:0;
     transform:translateY(-10px);
     transition:all 0.4s ease;
-  }
-  #navlist ul{
-    display:flex;
-    justify-content: center;
-    flex-wrap:wrap;
-    gap:20px;
   }
   #navlist li{
     padding:10px 0;
@@ -222,8 +231,6 @@ button:hover, .btn:hover {
     transform:translateY(0);
 
   }
-
-
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -234,4 +241,9 @@ button:hover, .btn:hover {
     flex-direction: column;
     gap:8px;
   }
+}
+@media (max-width:768px){
+  main {
+    padding: 30px 5%;
+    gap: 20px; }
 }
