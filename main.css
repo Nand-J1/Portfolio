@@ -1,10 +1,13 @@
 main{
   background: linear-gradient(45deg, 
     #0d905c,
-    #001572,   /* near black */
-    #1e3c72,   /* deep blue */
-    #020617    /* back to dark */);
+    #001572,  
+    #1e3c72,   
+    #020617 );
     color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content1 {
@@ -13,6 +16,9 @@ main{
 }
 .intro-main{
   animation:fadeUp 1s ease;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 #intro-text{
   color:white;
@@ -20,10 +26,10 @@ main{
   backdrop-filter:blur(15px);
   border-radius:15px;
   padding:25px; 
-  box-shadow: 0 10px 25 px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   border:1px solid rgba(225,225,225,0.2);
-}
-
+  display:flex;
+  flex-direction:column;}
 @keyframes fadeUp {
   from{
     opacity: 0;
@@ -52,6 +58,15 @@ main{
   color:cyan;
   text-shadow:0 0 10px cyan;
 }
+button{
+  display:inline-block;
+  text-align:center;
+  border-radius: 10px;
+  box-sizing:border-box;
+  padding:10px;
+  font-family: cursive;
+  font-size:larger;
+  margin:10px;}
 .intro-main span {
   color: cyan; 
   font-style: italic;
@@ -78,16 +93,18 @@ main{
   box-shadow: 0 0 25px cyan;
   transition: all 0.4s ease;
 }
-#intro-text{
-  justify-content: right;
-  display:flex;
-  flex-direction:column;
-}
+
 .portfoliotext{
   margin-top:10px;
   color:white;
   text-align:center;
   font-size:18px;
+}
+.pic figure{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+
 }
 @media only screen and (min-width:768px){
   .intro-main{

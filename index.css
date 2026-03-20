@@ -60,11 +60,14 @@ html{
   font-weight: bold;
   transition: all 0.3s ease;
   position:relative;
+  padding:6px 10px;
+  border-radius:10px;
+  transition: all 0.3s ease;
 
 }
 #navlist li a::after{
   content:"";
-  position: relative;
+  position: absolute;
   width: 0%;
   height:2px;
   bottom:-5px;
@@ -73,13 +76,18 @@ html{
   transition:0.3s;
 }
 
-#navlist li a:hover {
+#navlist li a:hover{
   color: cyan;
   display:inline-block;
   transform: translateY(-6px);
   transition:transform 0.3s;
 }
-#navlist li a:hover ::after{
+#navlist li a.active {
+  color:#00bcd4;
+  box-shadow: -2px 0 0 #00bcd4,2px 0 0 #00bcd4; 
+}
+
+#navlist li a:hover::after{
   width:100%;
 }
 h1{
@@ -153,9 +161,6 @@ button, .btn {
 
 button:hover, .btn:hover {
   background-color: #008c9e;
-}
-.active {
-  color:#00bcd4;
 }
 
 @media only screen and (max-width: 767px) {

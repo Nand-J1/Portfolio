@@ -1,12 +1,25 @@
 main{
-  
+  background:linear-gradient(135deg,#020617,#001572,rgb(8, 35, 152),#0d905c,rgb(141, 255, 253));
+  color:white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #aboutme{
-  width:60%;
-  grid-area:text;}
+  width:100%;
+  grid-area:text;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  margin:10px;
+  padding:20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-sizing: border-box;}
+
 #aboutme h1 {
   font-size: 32px;
-  color: #0a2a43;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -17,12 +30,12 @@ main{
 }
 
 #aboutme span {
-  color: #00bcd4;
+  color:cyan;
   font-weight: bold;
 }
 span{
   font-style: italic;
-  color:#00bcd4;
+  color:cyan;
 }
 
 figure img{
@@ -44,10 +57,11 @@ figure{
   display:flex;
   flex-direction:column;
   align-items:center;
+  text-align:center;
 }
 
-@media only screen and (min-width: 768px) {
-  main{
+@media only screen and (min-width: 769px) {
+  #about{
   display:grid;
   grid-template-areas:"text image";
   grid-template-columns: 1fr 1fr;
@@ -59,7 +73,7 @@ figure{
 
 /* Responsive so it stack vertically on smaller screens */
 @media only screen and (max-width: 768px) {
-  main{
+  #about{
     display:flex;
     flex-direction:column;
     align-items:center;
