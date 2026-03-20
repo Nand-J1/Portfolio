@@ -2,7 +2,7 @@
   text-align: center;
   padding: 40px 20px;
 }
-.intro h1 {
+.intro-main h1 {
   font-size: 36px;
   color: #0a2a43;
   margin-bottom: 16px;
@@ -10,16 +10,16 @@
   text-shadow: 2px 2px 4px rgba(0, 188, 212, 0.5);
 }
 
-.intro p {
+.intro-main p {
   font-size: 18px;
   margin: 8px 0;
 }
-#s1{
+#sp-name{
   font-weight:bold;
   font-style:none;
   font-family: 'Times New Roman', Times, serif;
 }
-.intro span {
+.intro-main span {
   color: #00bcd4; 
   font-style: italic;
 }
@@ -49,12 +49,12 @@
 }
 
 @media only screen and (min-width:768px){
-  .intro{
-  display:grid;
-  grid-template-areas:"picture text1";
-  grid-template-columns: 1fr 1fr;
-  grid-gap:20px;
-  align-items:center
+  .intro-main{
+    display:grid;
+    grid-template-areas:"picture text1";
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    align-items:center
 
   }
   .pic{
