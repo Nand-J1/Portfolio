@@ -11,14 +11,16 @@
 
 </head>
 <body>
-    <nav id="nav-bar">
+   <nav id="nav-bar">
+        <div class="nav-mobile">
         <div class="logo">NJ</div>
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </label>
         <ul id="navlist">
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html" class="active">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="project.html">PROJECTS</a></li>
             <li><a href="skills.html">SKILLS</a></li>
@@ -28,8 +30,8 @@
     </nav>
     <main>
     <section id="skills">
-        <h1>Technical Skills</h1>
-        <div class="skills-grid">
+        <h1>My Skills</h1>
+        <div class="skills-container">
             <div class="skill-card" id="s1">
                 <i class="fa-solid fa-code"></i>
                 <h2>Programming Languages</h2>
@@ -45,24 +47,24 @@
                 <div class="tags">
                     <span>HTML</span>
                     <span>CSS</span>
-                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
                 </div>
             </div>
             <div class="skill-card" id="s3">
                 <i class="fa-solid fa-database"></i>
-                <h2>Data Structures & Algorithms</h2>
-                <p>Strong understanding of fundamentals, with experience in competitive programming.</p>
+                    <h2>Core Concepts</h2>
+                    <p>Problem Solving</p>
+                </div>
+                <div class="skill-card" id="s4">
+                    <i class="fa-solid fa-tools"></i>
+                    <h2>Tools & Others</h2>
+                    <ul>
+                        <li>Version Control: Git</li>
+                        <li>Database:MySQL</li>
+                    </ul>
+                </div>
             </div>
-            <div class="skill-card" id="s4">
-                <i class="fa-solid fa-tools"></i>
-                <h2>Tools & Others</h2>
-                <ul>
-                    <li>Version Control: Git</li>
-                    <li>Other: Responsive Design</li>
-                </ul>
-            </div>
-        </div>  
-    </section>
+        </section>
     </main>
     <footer>
         <div class="footer-content">

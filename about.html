@@ -10,15 +10,16 @@
 
 </head>
 <body>
-    <nav id="nav-bar">
+   <nav id="nav-bar">
+        <div class="nav-mobile">
         <div class="logo">NJ</div>
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        
         <ul id="navlist">
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html" class="active">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="project.html">PROJECTS</a></li>
             <li><a href="skills.html">SKILLS</a></li>
@@ -29,7 +30,7 @@
     <main>
         <figure>
             <img src="biopic.png" alt="Nandana's Photo">
-            <figcaption class="portfoliotext" id="portfolio-caption">Nandana Jayakumar<b>|</b><span>Aspiring software engineer</span></figcaption>
+            <figcaption class="portfoliotext" id="portfolio-caption"><strong>Nandana Jayakumar</strong><b>|</b><span>Aspiring software engineer</span></figcaption>
         </figure>
         <div id="aboutme">
             <h1>About Me</h1>

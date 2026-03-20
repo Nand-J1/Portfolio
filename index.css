@@ -5,11 +5,10 @@
     box-sizing: border-box;
 }
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:aliceblue;   
-    color:#333;
-    line-height:1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height:1.5;
 }
+   
 html, body {
   height: 100%;
   display: flex;
@@ -30,20 +29,27 @@ html{
   gap:6px;
   z-index:1001;
 }
-
+.logo{
+  color:#00bcd4;
+  font-weight:700;
+  font-size:22px;
+  letter-spacing:1px;
+}
 #nav-bar{
     display: flex;
-    justify-content: space-evenly;
-    background-color: #0a2a43;
+    justify-content: space-between;
+    background: #0a2a43;
     align-items: center;
     padding: 15px 60px;
     width: 100%;
     margin:0 0 0 0;
     border-bottom: 2px solid #00bcd4;
+    backdrop-filter: blur(10px);
 }
 #navlist{
   list-style: none;
   display: flex;
+  margin-left:auto;
   justify-content: right;
   gap: 32px;
 
@@ -53,7 +59,18 @@ html{
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
+  position:relative;
 
+}
+#navlist li a::after{
+  content:"";
+  position: relative;
+  width: 0%;
+  height:2px;
+  bottom:-5px;
+  left:0;
+  background:white;
+  transition:0.3s;
 }
 
 #navlist li a:hover {
@@ -61,6 +78,9 @@ html{
   display:inline-block;
   transform: translateY(-6px);
   transition:transform 0.3s;
+}
+#navlist li a:hover ::after{
+  width:100%;
 }
 h1{
   color: #0a2a43;
@@ -134,13 +154,23 @@ button, .btn {
 button:hover, .btn:hover {
   background-color: #008c9e;
 }
+.active {
+  color:#00bcd4;
+}
 
 @media only screen and (max-width: 767px) {
   /*hamburger menu for mobile*/
   #nav-bar{
-    flex-direction:column;
-    align-items:flex-start;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content:space-between;
     padding:15px 20px;
+  }
+  .nav-mobile{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
   }
   #navlist{
     flex-direction:column;
@@ -154,21 +184,40 @@ button:hover, .btn:hover {
     transform:translateY(-10px);
     transition:all 0.4s ease;
   }
+  #navlist ul{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:20px;
+  }
   #navlist li{
     padding:10px 0;
     width:100%;
     text-align:center;
+    opacity:0;
+    transform:translateY(10px);
+    transition:0.3s;
   }
+  .menu-icon{
+    margin-left:auto;
+    font-size:26px;
+  }
+  #menu-toggle:checked ~ #navlist li{ 
+    opacity:1;
+    transform:translateY(0);
+    }
   .menu-icon{
     display:block;
   }
+
   #menu-toggle:checked ~ #navlist{
     display:flex;
     opacity:1;
-    max-height:300px;
+    max-height:100vh;
     transform:translateY(0);
 
   }
+
 
   .footer-content {
     flex-direction: column;

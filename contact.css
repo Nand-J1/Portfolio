@@ -1,13 +1,24 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+    padding: 60px 10%;
+}
 .forms-container{
-    display:flex;
-    flex-direction: column;
     border:1px solid black;
-    padding:20px;
-    background-color: rgb(94, 94, 193);
+    padding:25px;
+    background:#e6faff;
+    border-radius:10px;
+}
+
+.contact-info h1{
+    margin-bottom:20px;
 }
 input,textarea {
     width:100%;
     margin-bottom:10px;
+    padding:10px;
+    border-radius: 10px;
 }
 h1{
     text-align:center;
@@ -16,17 +27,14 @@ h1{
 .contact-social a{
     color:black;
 }
-@media only screen and (min-width:768px){
+button{
+    width: 100%;
+}
+@media only screen and (max-width:768px){
     main{
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         gap:20px;
         place-items:center;
     }  
-    .contact-info{
-        grid-column:1;
-    }
-    .forms-container{
-        grid-column:2;
-    }
 }
